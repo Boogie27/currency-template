@@ -195,7 +195,7 @@ ul.ul-drop-down li.drop-li a:hover{
 }
 .side-nav-inner-content{
     height: 80vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .side-nav-inner-content::-webkit-scrollbar{
     width: 10px;
@@ -244,6 +244,9 @@ ul.ul-side-nav .register-btn a:hover{
 @media only screen and (max-width: 567px){
     .side-nav-content, .side-nav-content.right{
         width: 80%;
+    }
+    ul.ul-side-nav li a{
+        font-weight: 300;
     }
 }
 
@@ -345,6 +348,9 @@ ul.ul-side-nav .register-btn a:hover{
     .banner-right img{
         width: 300px;
     }
+    .banner-left p{
+        font-weight: 500;
+    }
 }
 @media only screen and (max-width: 398px){
     .banner-left h1{
@@ -414,6 +420,7 @@ ul.ul-side-nav .register-btn a:hover{
     .index-content-container{
         top: -100px;
         padding: 50px 0px;
+        background-color: rgb(243, 243, 243);
     }
     .index-content-container .row.expand{
         max-width: 100%;
@@ -424,6 +431,7 @@ ul.ul-side-nav .register-btn a:hover{
     display: flex;
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 50px;
     position: relative;
 }
 .second-banner-left, .second-banner-right{
@@ -446,7 +454,7 @@ ul.ul-side-nav .register-btn a:hover{
 }
 .second-banner-right .banner-body a.trade-btn{
     color: #333;
-    padding: 5px 20px;
+    padding: 7px 30px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -502,6 +510,9 @@ ul.ul-side-nav .register-btn a:hover{
     .second-banner-right .title-header h3{
         font-size: 29px;
     }
+    .second-banner-right .banner-body a.trade-btn{
+         padding: 10px 30px;
+    }
 }
 @media only screen and (max-width: 398px){
     .second-banner{
@@ -512,10 +523,90 @@ ul.ul-side-nav .register-btn a:hover{
     }
 }
 
+/* ************* TESTIMONIAL SECTION********* */
+.testimonial-container{
+    padding: 0px 50px 100px 50px;
+    background-color: rgb(243, 243, 243);
+}
+.testimonial-container .title-header h3{
+    color: #555;
+    padding: 50px 0px;
+    font-size: 35px !important;
+}
+.testimonial-body{
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    /* box-shadow: 0px 2px 7px 2px rgba(197, 196, 196, 0.589) */
+}
+.testimonial-body:hover{
+    transform: scale(1.03);
+    background-image: linear-gradient(rgb(253, 232, 148) 0%, rgb(255, 215, 86) 100%);
+}
+.testimonial-body .font{
+    height: 0px;
+}
+.testimonial-body .font{
+    top: -33px;
+    right: -10px;
+    height: 0px;
+    text-align: right;
+    position: relative
+}
+.testimonial-body .font i{
+    font-size: 20px;
+    color: rgb(255, 215, 86);
+}
+.testimonial-body:hover .font i{
+    color: #fff;
+}
 
-
-
-
+.testimonial-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonial-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.testimonial-star i{
+    color:  rgb(243, 202, 36);
+}
+.testimonial-body:hover .testimonial-star i{
+    color: #fff;
+}
+.testimonial-content ul li p{
+    font-size: 15px;
+    color: #555;
+}
+.testimonial-body:hover .testimonial-content ul li p{
+    color: #fff;
+}
+.testimonial-content ul li h4{
+    font-size: 17px;
+    color: #333;
+}
+.testimonial-content ul li span{
+    font-size: 13px;
+    color: #555;
+}
+@media only screen and (max-width: 567px){
+    .testimonial-body{
+        padding: 40px 10px;
+    }
+    .testimonial-container{
+        padding: 0px 20px 100px 20px;
+    }
+    .testimonial-body .font{
+        right: 0px;
+    }
+}
 
 
 
