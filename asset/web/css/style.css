@@ -28,9 +28,6 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
-section{
-    overflow-x: hidden;
-}
 
 /* ************* NAVIGATION ************* */
 .navigation{
@@ -257,11 +254,15 @@ ul.ul-side-nav .register-btn a:hover{
 /* *********** BANNER SECTION *********** */
 .banner-container{
     width: 100%;
-    display: flex;
-    padding: 0px 50px;
-    padding-bottom: 50px;
+    overflow: hidden;
     align-items: center;
     background-image: linear-gradient(rgb(248, 209, 47) 0%, rgb(240, 185, 11) 100%);
+}
+.inner-banner-1{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
 }
 .banner-left, .banner-right{
     width: 50%;
@@ -329,12 +330,13 @@ ul.ul-side-nav .register-btn a:hover{
     }
 }
 @media only screen and (max-width: 992px){
-    .banner-container{
+    .inner-banner-1{
         display: block;
-        padding-top: 100px;
+        width: 100%;
     }
     .banner-left, .banner-right{
         width: 100%;
+        text-align: center;
     }
     .banner-right img{
         width: 400px;
@@ -342,14 +344,14 @@ ul.ul-side-nav .register-btn a:hover{
 }
 @media only screen and (max-width: 567px){
     .banner-container{
-        padding: 100px 20px 0px 20px;
+        padding: 0px;
     }
     .banner-form form button, .banner-form form input{
         width: inherit;
         margin-bottom: 10px;
     }
     .banner-right img{
-        width: 300px;
+        width: 100%;
     }
     .banner-left p{
         font-weight: 500;
@@ -368,10 +370,15 @@ ul.ul-side-nav .register-btn a:hover{
 /* ************ CONTENT SECTION *********** */
 .index-content-container{
     top: -40px;
+    overflow: hidden;
     position: relative;
-    padding: 50px;
     border-radius: 40px 40px 0px 0px;
     background-color: #fff;
+}
+.inner-index-content{
+    padding: 50px;
+    width: 80%;
+    margin: 0 auto;
 }
 .index-content-container a{
     text-decoration: none;
@@ -407,6 +414,9 @@ ul.ul-side-nav .register-btn a:hover{
     .index-content-container{
         top: -200px;
     }
+    .inner-index-content{
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 767px){
     .inner-content-banner h3.content-h3{
@@ -417,6 +427,10 @@ ul.ul-side-nav .register-btn a:hover{
     }
     .inner-content-banner p{
         font-size: 12px;
+    }
+    .inner-index-content{
+        width: 100%;
+        padding: 0px;
     }
 }
 @media only screen and (max-width: 567px){
@@ -431,6 +445,7 @@ ul.ul-side-nav .register-btn a:hover{
 }
 /* ************** SECOND BANNER *********** */
 .second-banner, .second-banner-2{
+    overflow: hidden;
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -535,6 +550,7 @@ ul.ul-side-nav .register-btn a:hover{
 
 /* ************* TESTIMONIAL SECTION********* */
 .testimonial-container{
+    overflow: hidden;
     padding: 0px 50px 100px 50px;
     background-color: rgb(243, 243, 243);
 }
@@ -632,6 +648,7 @@ ul.ul-side-nav .register-btn a:hover{
     height: 50vh;
     width: 100%;
     display: table;
+    overflow: hidden;
     text-align: center;
     position: relative;
     text-align: center;
@@ -683,6 +700,7 @@ ul.ul-side-nav .register-btn a:hover{
 
 /* ********* FOOTER SECTION ************ */
 .footer-container{
+    overflow: hidden;
     background-color: black;
     background-image: linear-gradient(rgb(248, 209, 47) 0%, rgb(240, 185, 11) 100%);
 }
