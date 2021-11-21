@@ -27,7 +27,7 @@ $(".open-side-mobile-navigation").click(function(e){
 
 
 // ********** CLOSE SIDE NAVIGATION ************//
-$("#side_nav_close").click(function(e){
+$(".side-nav-close").click(function(e){
     e.preventDefault()
     mobile_navigation(false)
 })
@@ -41,9 +41,8 @@ function mobile_navigation(navState){
         right = '-500px'
         $("#side_dark_theme").hide()
     }
-    $("#side_nav_content").css({
+    $(".side-nav-content").css({
         right: right,
-        // transition: 'all 0s ease'
     })
 }
 
@@ -58,3 +57,35 @@ function darkskin_close_mobile_navigation(){
     })
 }
 darkskin_close_mobile_navigation()
+
+
+
+
+
+
+function form_animate(object){
+    $(object.container).css({
+        right: object.direction,
+        transition: object.transition,
+        right: object.right,
+        left: object.left,
+    })
+    if(object.skin){
+        $(object.skin).show()
+    }
+}
+
+
+
+
+// ************ SIDE SIGNUP TOGGLE *************//
+$(".side-signup-form-toggle-btn").click(function(e){
+    e.preventDefault()
+    object = {
+        right: '0px',
+        skin: '#side_dark_theme',
+        container: '.side-nav-content',
+        transition: 'all 0.3s ease',
+    }
+    form_animate(object)
+})

@@ -255,7 +255,6 @@ ul.ul-side-nav .register-btn a:hover{
 .banner-container{
     width: 100%;
     overflow: hidden;
-    align-items: center;
     background-image: linear-gradient(rgb(248, 209, 47) 0%, rgb(240, 185, 11) 100%);
 }
 .inner-banner-1{
@@ -263,6 +262,7 @@ ul.ul-side-nav .register-btn a:hover{
     width: 80%;
     margin: 0 auto;
     padding: 30px;
+    padding-top: 70px;
 }
 .banner-left, .banner-right{
     width: 50%;
@@ -270,6 +270,7 @@ ul.ul-side-nav .register-btn a:hover{
 .banner-left h1{
     font-weight: bold;
     color: #fff;
+    text-align: left;
     font-size: 56px !important;
 }
 .banner-left p{
@@ -277,6 +278,7 @@ ul.ul-side-nav .register-btn a:hover{
     font-size: 18px;
     font-weight: bold;
     margin: 20px 0px;
+    text-align: left
 }
 .banner-form form{
     width: 100%;
@@ -432,15 +434,22 @@ ul.ul-side-nav .register-btn a:hover{
         width: 100%;
         padding: 0px;
     }
+    .index-content-container{
+        top: -150px;
+    }
 }
 @media only screen and (max-width: 567px){
     .index-content-container{
-        top: -100px;
         padding: 50px 0px;
         background-color: rgb(243, 243, 243);
     }
     .index-content-container .row.expand{
         max-width: 100%;
+    }
+}
+@media only screen and (max-width: 398px){
+    .index-content-container{
+        top: -110px;
     }
 }
 /* ************** SECOND BANNER *********** */
@@ -792,5 +801,8 @@ ul.ul-side-nav .register-btn a:hover{
         padding: 20px 10px;
     }
 }
+
+
+
 
 
