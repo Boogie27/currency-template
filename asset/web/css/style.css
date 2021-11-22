@@ -859,6 +859,11 @@ ul.ul-side-nav .register-btn a:hover{
     display: flex;
     justify-content: space-between;
 }
+@media only screen and (max-width: 567px){
+    .side-nav-content.side-signup{
+        width: 95%;
+    }
+}
 
 
 
