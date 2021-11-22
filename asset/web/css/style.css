@@ -249,9 +249,6 @@ ul.ul-side-nav .register-btn a:hover{
     ul.ul-side-nav li a{
         font-weight: 300;
     }
-    .side-nav-content.side-signup{
-        width: 90%;
-    }
 }
 
 
@@ -810,9 +807,6 @@ ul.ul-side-nav .register-btn a:hover{
 /* ************* SIGNUP FORM ************* */
 .side-signup-content{
     overflow-y: auto;
-}
-.side-nav-content.side-signup{
-    width: 350px;
 }
 .form-inner-content{
     color: #333;
