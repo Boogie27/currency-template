@@ -808,6 +808,9 @@ ul.ul-side-nav .register-btn a:hover{
 .side-signup-content{
     overflow-y: auto;
 }
+.side-nav-content.side-signup{
+    width: 350px;
+}
 .form-inner-content{
     color: #333;
     padding: 20px;
@@ -862,6 +865,11 @@ ul.ul-side-nav .register-btn a:hover{
 @media only screen and (max-width: 567px){
     .side-nav-content.side-signup{
         width: 95%;
+    }
+}
+@media only screen and (max-width: 398px){
+    .form-inner-content .title-header p{
+        font-size: 12px;
     }
 }
 

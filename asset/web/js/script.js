@@ -41,6 +41,11 @@ function mobile_navigation(navState){
         right = '-500px'
         $("#side_dark_theme").hide()
     }
+    if(!navState){
+        $(".side-nav-content").css({
+            right: right,
+        })
+    }
     $("#side_nav_content").css({
         right: right,
     })
