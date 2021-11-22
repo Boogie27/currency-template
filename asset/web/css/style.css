@@ -28,7 +28,29 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
-
+/* ********* APP PRELOADER ***********/
+.app-preloader{
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    /* display: none; */
+    align-items: center;
+    background-color: #fff;
+}
+.app-preloader img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 567px){
+    .app-preloader img{
+        width: 70px;
+        height: 70px;
+    }
+}
 /* ************* NAVIGATION ************* */
 .navigation{
     
@@ -969,16 +991,201 @@ ul.ul-side-nav .register-btn a:hover{
 
 
 
+/* ********** SUBSCRIPTION ALERT *********** */
+.modal-alert-popup{
+    display: none;
+}
+.sub-confirm-container{
+    top: 0px;
+    width: 100%;
+    z-index: 30;
+    height: 100vh;
+    position: fixed;
+    display: table;
+    text-align: center; 
+}
+.sub-confirm-dark-theme{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.623);
+}
+.sub-inner-content{
+    width: 550px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.sub-inner-content{
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.confirm-header{
+    padding: 10px 0px;
+}
+.confirm-header h4{
+    font-size: 20px;
+    margin: 0px;
+    color:  rgba(248, 179, 50, 1)
+}
+.confirm-header h3{
+    font-size: 20px;
+    margin: 0px;
+}
+.confirm-header p{
+    font-size: 14px;
+    margin: 0px;
+}
+button.confirm-box-close, .btn-btn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+button.confirm-box-close:focus, .btn-btn:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+button.confirm-box-close i, .btn-btn i{
+    color: rgba(248, 179, 50, 1)
+}
+button.confirm-btn{
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    color: #fff;
+    padding: 10px 0px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition:  background-color 0.2s ease;
+    background-color:  rgba(248, 179, 50, 1)
+}
+button.confirm-btn:hover{
+    background-color:  rgb(218, 142, 1)
+}
 
+@media only screen and (max-width: 767px){
+    .sub-inner-content{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 567px){
+    .sub-inner-content{
+        width: 100%;
+    }
+    .confirm-header p{
+        font-size: 13px;
+        padding: 0px 10px;
+    }
+}
 
-
-
-
-
-
-
-
-
+/* ************ DASHBOARD SECTION ************ */
+.dashboard-body{
+    display: flex;
+    background-color: rgb(238, 238, 238);
+}
+.dashboard-left{
+    width: 250px;
+    height: 80vh;
+    overflow: auto;
+    margin-right: 20px;
+    background-color: #fff;
+}
+.dashboard-left .title-header{
+    padding: 10px 20px;
+    text-align: left;
+    background-image: linear-gradient(rgb(248, 209, 47) 0%, rgb(240, 185, 11) 100%);
+}
+.dashboard-left .title-header h4{
+    font-size: 15px;
+}
+.dashboard-left .title-header h4 i{
+    margin-right: 10px;
+}
+.dashboard-left ul{
+    padding: 10px 20px;
+}
+.dashboard-left ul li a{
+    text-align: left;
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+.dashboard-left ul li a:hover{
+    color: rgb(250, 192, 0)
+}
+.dashboard-right{
+    padding: 10px;
+    width: 100%;
+}
+.dashboard-top{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.dashboard-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.dashboard-img img{
+    width: 100%;
+}
+.dashboard-top ul{
+    width: 100%;
+    margin-left: 10px;
+}
+.dashboard-top ul li{
+    text-align: left;
+    font-size: 12px;
+    color: rgb(190, 190, 190);
+}
+.dashboard-top ul li.email{
+    color: rgb(250, 192, 0)
+}
+.dashboard-content{
+    text-align: left;
+}
+.dashboard-content-middle, .dashboard-content-right{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.dashboard-content-middle .title-header h4{
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.dashboard-links ul li{
+    padding: 10px 0px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.dashboard-links ul{
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.dashboard-links ul li a{
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    padding: 12px 0px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+.dashboard-links ul li a:hover{
+    color: rgb(250, 192, 0);
+    border-bottom: 3px solid rgb(250, 192, 0);
+}
 
 
 

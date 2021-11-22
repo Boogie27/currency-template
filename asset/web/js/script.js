@@ -1,3 +1,18 @@
+$(document).ready(function(){
+// ********** REMOVE MAIN PAGE PRELOADER **********//
+function remove_main_page_preloader(){
+    $("#main_app_preloader").fadeOut(300)
+}
+setTimeout(function(){
+    remove_main_page_preloader()
+}, 1000)
+
+
+
+
+
+
+
 // *********** DROP DOWN BOX ****************//
 $(window).click(function(e){
     $('.drop-down-body').hide()
@@ -147,3 +162,84 @@ $(".forgot-password-popup-btn").click(function(e){
     }
     form_animate(object)
 })
+
+
+
+
+
+// ************** ACCOUNT POPUP TOGGLE *************//
+$(".account-popup-toggle-btn").click(function(e){
+    e.preventDefault()
+    $("#account_modal_popup").show()
+})
+
+
+
+// ********* CLOSE ACCOUNT BOX *********//
+$(".account-box-close").click(function(e){
+    e.preventDefault()
+    $(".modal-alert-popup").hide()
+})
+
+
+
+
+
+// end
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

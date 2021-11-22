@@ -12,7 +12,16 @@
     <script src="asset/web/js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    
+    <section> <!-- app preloader start-->
+        <div class="app-preloader" id="main_app_preloader">
+            <img src="asset/web/images/preloader/2.gif" alt="">
+        </div>
+    </section>
+
+
+
+
+
     <section> <!-- navigation start-->
         <div class="navigation">
             <div class="navigation-container">
@@ -51,6 +60,7 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li><a href="#" class="account-popup-toggle-btn">Account</a></li>
                             <li><a href="#" class="side-signup-form-toggle-btn">Register</a></li>
                             <li><a href="#" class="login-form-popoup-btn">Login</a></li>
                             <li><a href="#">Trade</a></li>
@@ -81,7 +91,8 @@
            <div class="side-nav-inner-content">
                 <ul class="ul-side-nav">
                     <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="categories.html"><i class="fa fa-user"></i> Categories</a></li>
+                    <li><a href="#" class="account-popup-toggle-btn"><i class="fa fa-user"></i> Account</a></li>
+                    <li><a href="categories.html"><i class="fa fa-cubes"></i> Categories</a></li>
                     <li><a href="#"><i class="fa fa-cube"></i> About</a></li>
                     <li><a href="#"><i class="fa fa-cog"></i> Privacy</a></li>
                     <li class="register-btn"><a href="#" class="side-signup-form-toggle-btn">Register</a></li>
@@ -378,7 +389,7 @@
                     <div class="testimonial-body">
                         <div class="font"><i class="fa fa-circle"></i></div>
                         <div class="testimonial-img">
-                            <img src="asset/web/images/profile/1.jpg" alt="">
+                            <img src="asset/web/images/testimonial/1.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
                             <ul>
@@ -407,7 +418,7 @@
                     <div class="testimonial-body">
                         <div class="font"><i class="fa fa-circle"></i></div>
                         <div class="testimonial-img">
-                            <img src="asset/web/images/profile/3.jpeg" alt="">
+                            <img src="asset/web/images/testimonial/3.jpeg" alt="">
                         </div>
                         <div class="testimonial-content">
                             <ul>
@@ -437,7 +448,7 @@
                     <div class="testimonial-body">
                         <div class="font"><i class="fa fa-circle"></i></div>
                         <div class="testimonial-img">
-                            <img src="asset/web/images/profile/2.jpg" alt="">
+                            <img src="asset/web/images/testimonial/2.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
                             <ul>
@@ -509,8 +520,74 @@
                     </div>
             </div>
         </div>
-        <div class="footer-bottom">Getmoney &copy; all rights reserved 2021</div>
+        <div class="footer-bottom">Getcurrency &copy; all rights reserved 2021</div>
     </section>
+
+
+
+
+
+
+
+<section class="modal-alert-popup" id="account_modal_popup">
+    <div class="sub-confirm-container">
+        <div class="sub-confirm-dark-theme">
+            <div class="sub-inner-content">
+                <div class="text-right p-2">
+                    <button class="btn-btn account-box-close"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="dashboard-body">
+                    <div class="dashboard-left"><!--dashboard left start-->
+                        <div class="title-header"><h4><i class="fa fa-user"></i> Dashboard</h4></div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Transaction History</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div><!--dashboard left end-->
+                    <div class="dashboard-right"><!--dashboard right start-->
+                        <div class="dashboard-top">
+                            <div class="dashboard-img"> 
+                                <img src="asset/web/images/profile/male.png" alt="">
+                            </div>
+                            <ul>
+                                <li class="email">Example@gmail.com</li>
+                                <li>Last login: 25 march 2021 16:03:26</li>
+                            </ul>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="row">
+                                <div class="col-xl-8">
+                                    <div class="dashboard-content-middle">
+                                        <div class="title-header"><h4>Account details</h4></div>
+                                        <div class="dashboard-links">
+                                            <ul>
+                                                <li><a href="#">Buys</a></li>
+                                                <li><a href="#">Sales</a></li>
+                                                <li><a href="#">BTN</a></li>
+                                                <li><a href="#">NGN</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="dashboard-content-right">
+                                        hello
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--dashboard right end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
 
 
