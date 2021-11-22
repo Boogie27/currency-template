@@ -79,8 +79,61 @@ function form_animate(object){
 
 
 // ************ SIDE SIGNUP TOGGLE *************//
+var n = 0
+var form = $(".form-inner-content")
+function show_forms(n){
+    for(var i = 0; i < form.length; i++){
+        $(form).hide()
+    }
+    $(form[n]).show()
+}
+show_forms(n)
+
+
+
 $(".side-signup-form-toggle-btn").click(function(e){
     e.preventDefault()
+
+    show_forms(0)
+
+    object = {
+        right: '0px',
+        skin: '#side_dark_theme',
+        container: '.side-nav-content',
+        transition: 'all 0.3s ease',
+    }
+    form_animate(object)
+})
+
+
+
+
+// ************* SIDE LOGIN LOGIN TOGGLE ***********//
+$(".login-form-popoup-btn").click(function(e){
+    e.preventDefault()
+
+    show_forms(1)
+
+    object = {
+        right: '0px',
+        skin: '#side_dark_theme',
+        container: '.side-nav-content',
+        transition: 'all 0.3s ease',
+    }
+    form_animate(object)
+})
+
+
+
+
+
+
+// ************* SIDE  FORGOT PASSWORD TOGGLE ***********//
+$(".forgot-password-popup-btn").click(function(e){
+    e.preventDefault()
+
+    show_forms(2)
+
     object = {
         right: '0px',
         skin: '#side_dark_theme',

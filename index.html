@@ -52,7 +52,7 @@
                                 </div>
                             </li>
                             <li><a href="#" class="side-signup-form-toggle-btn">Register</a></li>
-                            <li><a href="#">Login</a></li>
+                            <li><a href="#" class="login-form-popoup-btn">Login</a></li>
                             <li><a href="#">Trade</a></li>
                         </ul>
                     </div>
@@ -105,7 +105,7 @@
 
     <section class="side-navigation-container"><!-- signup form start-->
         <div class="side-dark-theme" id="side_dark_theme"></div><!-- dark theme-->
-        <div class="side-nav-content" id="side_signup_form">
+        <div class="side-nav-content side-signup" id="side_signup_form">
             <div class="side-nav-btn-container">
                 <div class="sm-nav-logo">
                     <!-- <img src="assets/images/logo/logo.png" alt=""> -->
@@ -113,24 +113,74 @@
                 </div>
                 <button class="side-nav-close" id="side_nav_close"><i class="fa fa-times"></i></button>
             </div>
-            <div class="side-nav-inner-content">
-                <ul class="ul-side-nav">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="categories.html"><i class="fa fa-user"></i> Categories</a></li>
-                    <li><a href="#"><i class="fa fa-cube"></i> About</a></li>
-                    <li><a href="#"><i class="fa fa-cog"></i> Privacy</a></li>
-                    <li class="register-btn"><a href="#">Register</a></li>
-                    <li class="login-btn"><a href="#">Logout</a></li>
-                </ul>
-                <ul class="ul-side-nav">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="categories.html"><i class="fa fa-user"></i> Categories</a></li>
-                    <li><a href="#"><i class="fa fa-cube"></i> About</a></li>
-                    <li><a href="#"><i class="fa fa-cog"></i> Privacy</a></li>
-                    <li><a href="categories.html"><i class="fa fa-user"></i> Categories</a></li>
-                    <li><a href="#"><i class="fa fa-cube"></i> About</a></li>
-                    <li><a href="#"><i class="fa fa-cog"></i> Privacy</a></li>
-                </ul>
+            <div class="side-signup-content">
+                <div class="form-inner-content">
+                    <div class="title-header">
+                        <h3>Register Now</h3>
+                        <p>Already have an account? <b><a href="#" class="login-form-popoup-btn login-text">Login here</a></b></p>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter confirm password">
+                        </div>
+                        <div class="form-group">
+                            <button type="button">Register Now</button>
+                           
+                        </div>
+                        <div class="text-form">
+                            <input type="checkbox"class="checkbox" value="">
+                            <span class="text">Signup for exclusive email newsletters form getcurrency</span>
+                            <p class="text">By signing up you agree to our <b><a href="#">terms</a></b> & <b><a href="#">privacy policy</a></b></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-inner-content">
+                    <div class="title-header">
+                        <h3>Login Form</h3>
+                        <p>Don't have an account? <b><a href="#" class="side-signup-form-toggle-btn login-text">Register here</a></b></p>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter password">
+                        </div>
+                        <div class="text-flex mb-2">
+                            <div class="">
+                                <input type="checkbox"class="checkbox" value="">
+                                <span class="text">Remember me</span>
+                            </div>
+                            <a href="#" class="forgot-password-popup-btn forgot-password">Forgot password</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="button">Login Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-inner-content">
+                        <div class="title-header">
+                            <h3>Forgot Password</h3>
+                            <p>Don't have an account? <b><a href="#" class="side-signup-form-toggle-btn login-text">Register here</a></b></p>
+                        </div>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <button type="button">Recover Password</button>
+                            </div>
+                            <div class="text-form">
+                                <p class="text">Email with a password reset token will be sent to you mail</p>
+                            </div>
+                        </form>
+                    </div>
             </div>
         </div>
     </section><!-- signup form end-->
@@ -142,7 +192,7 @@
         <div class="banner-container">
             <div class="inner-banner-1">
                 <div class="banner-left"> <!-- banner left start-->
-                    <h1>Where the world buy and sell crypto </h1>
+                    <h1>Trade Digital Currencies with Ease </h1>
                     <p>
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
                         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
