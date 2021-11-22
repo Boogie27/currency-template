@@ -872,6 +872,7 @@ ul.ul-side-nav .register-btn a:hover{
     margin: 0 auto;
 }
 .about-us-body{
+    min-height: 390px;
     padding: 50px 20px;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -921,15 +922,34 @@ ul.ul-side-nav .register-btn a:hover{
         width: 95%;
     }
 }
+@media only screen and (max-width: 1125px){
+    .about-us-body .about-us-img{
+        width: 300px;
+    }
+}
 @media only screen and (max-width: 567px){
     .about-us-container .inner-about-us{
         width: 100%;
         padding: 0px 20px;
     }
+    .about-us-body .about-us-img{
+        width: 200px;
+    }
 }
 @media only screen and (max-width: 398px){
     .about-us-container .inner-about-us{
         font-size: 13px;
+    }
+    .about-us-body .about-us-img{
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .about-us-body .about-us-img{
+        width: 100%;
+    }
+    .about-us-content .title-header h4{
+        font-size: 19px;
     }
 }
 
