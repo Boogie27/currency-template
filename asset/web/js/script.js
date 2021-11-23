@@ -170,7 +170,11 @@ $(".forgot-password-popup-btn").click(function(e){
 // ************** ACCOUNT POPUP TOGGLE *************//
 $(".account-popup-toggle-btn").click(function(e){
     e.preventDefault()
-    $("#account_modal_popup").show()
+    $("#main_app_preloader").show()
+    setTimeout(function(){
+        $("#main_app_preloader").hide()
+        $("#account_modal_popup").show()
+    }, 500)
 })
 
 
