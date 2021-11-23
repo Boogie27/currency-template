@@ -36,7 +36,7 @@ a {
     text-align: center;
     position: fixed;
     display: flex;
-    /* display: none; */
+    display: none;
     align-items: center;
     background-color: #fff;
 }
@@ -1090,10 +1090,9 @@ button.confirm-btn:hover{
     background-color: rgb(238, 238, 238);
 }
 .dashboard-left{
-    width: 250px;
+    width: 300px;
     height: 80vh;
     overflow: auto;
-    margin-right: 20px;
     background-color: #fff;
 }
 .dashboard-left .title-header{
@@ -1157,16 +1156,21 @@ button.confirm-btn:hover{
 .dashboard-content{
     text-align: left;
 }
+
 .dashboard-content-middle, .dashboard-content-right{
     padding: 10px;
     border-radius: 3px;
     background-color: #fff;
+}
+.dashboard-content-right{
+    margin-bottom: 10px;
 }
 .dashboard-content-middle .title-header h4{
     font-size: 14px;
     padding: 10px 0px;
 }
 .dashboard-links ul li{
+    color: #555;
     padding: 10px 0px;
     margin-right: 20px;
     display: inline-block;
@@ -1186,6 +1190,88 @@ button.confirm-btn:hover{
     color: rgb(250, 192, 0);
     border-bottom: 3px solid rgb(250, 192, 0);
 }
+.dashboard-middle-m ul{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.dashboard-middle-b{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.dashboard-middle-b ul li i{
+    top: -2px;
+    font-size: 8px;
+    position: relative;
+    color: rgb(128, 252, 128);
+}
+.dashboard-middle-b ul li span.status{
+    padding: 5px;
+}
+span.status-date{
+    font-size: 11px;
+    color: rgb(145, 145, 145);
+}
+.inner-dashboard-content{
+    height: 60vh;
+    overflow-y: auto;
+}
+.inner-dashboard-content::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.inner-dashboard-content::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgb(184, 184, 184);
+}
+.dashboard-content-right .title-header h4{
+    font-size: 14px;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.dashboard-content-right ul{
+    padding: 10px 0px;
+}
+.dashboard-content-right ul li{
+    font-size: 14px;
+    color: #555;
+}
+.dashboard-content-right ul li b{
+    color: #555;
+}
+.dashboard-content-right span{
+    font-weight: 500;
+}
+.dashboard-content-right ul li a.deactivate{
+    color: red;
+}
+.dashboard-right-content{
+    width: 100%;
+    height: 60vh;
+    overflow-y: auto;
+}
+.dashboard-right-content::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.dashboard-right-content::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgb(184, 184, 184);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
