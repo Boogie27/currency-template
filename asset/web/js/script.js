@@ -171,6 +171,7 @@ $(".forgot-password-popup-btn").click(function(e){
 $(".account-popup-toggle-btn").click(function(e){
     e.preventDefault()
     $("#main_app_preloader").show()
+    mobile_navigation(false)
     setTimeout(function(){
         $("#main_app_preloader").hide()
         $("#account_modal_popup").show()
@@ -186,6 +187,13 @@ $(".account-box-close").click(function(e){
 })
 
 
+
+
+// ********* OPEN ACCOUNT LINKS ***********//
+$("#open_account_nav_links").click(function(e){
+    e.preventDefault()
+    $(".dashboard-left").slideToggle(100)
+})
 
 
 
