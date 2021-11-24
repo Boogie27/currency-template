@@ -384,7 +384,7 @@ ul.ul-side-nav .register-btn a:hover{
 }
 @media only screen and (max-width: 398px){
     .banner-left h1{
-        font-size: 35px !important;
+        font-size: 42px !important;
     }
     .banner-left p{
         font-size: 15px;
@@ -1265,6 +1265,9 @@ button.confirm-btn:hover{
     border-radius: 5px;
     background-color: rgb(184, 184, 184);
 }
+a#open_account_nav_links{
+    display: none;
+}
 @media only screen and (max-width: 1125px){
     .inner-dashboard-content, .dashboard-right-content{
         height: 100%;
@@ -1303,6 +1306,9 @@ button.confirm-btn:hover{
     }
     .dashboard-right{
         height: 90vh;
+    }
+    a#open_account_nav_links{
+        display: block;
     }
 }
 

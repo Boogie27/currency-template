@@ -184,6 +184,7 @@ $(".account-popup-toggle-btn").click(function(e){
 $(".account-box-close").click(function(e){
     e.preventDefault()
     $(".modal-alert-popup").hide()
+    $(".dashboard-left").slideToggle(100)
 })
 
 
